@@ -1,0 +1,4 @@
+* { margin:0; padding:0; outline:none; }
+a { text-decoration:none; }
+.wrap { position:absolute; width:480px; overflow:hidden; top:0px; left:0px; bottom:0px; z-index:20; background:url(../img/jiaru.jpg) no-repeat center center; background-size:100%; }
+.logo { position:absolute; top:0px; left:  0px; width:480px; height:95px; z-index:10; background:url(../img/section1_logo.png) no-repeat 0px 0px; background-size:100%; }

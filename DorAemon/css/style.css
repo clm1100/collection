@@ -1,0 +1,206 @@
+* { margin: 0; padding: 0; outline: none; }
+a { text-decoration: none; }
+ul, li { list-style: none; }
+section { position: absolute; width: 640px; top: 0px; left: 0px; bottom: 0px; overflow: hidden; opacity: 0; -webkit-transition: 0.5s; display: none; }
+section.show { opacity: 1; }
+.section_1 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_bg.jpg) no-repeat center center; }
+.section_2 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_bg.jpg) no-repeat center center; }
+.section_3 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_bg.jpg) no-repeat center center; }
+.section_1 .item1 { width: 640px; height: 264px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_txt1.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: -320px; margin-top: -475px }
+.section_1 .item2 { width: 417px; height: 474px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_yuan.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: -372px; margin-top: -132px }
+.section_1 .item3 { width: 417px; height: 474px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_flower3.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: -14px; margin-top: -245px }
+.section_1 .item4 { width: 786px; height: 596px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_pingzi.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: -271px; margin-top: -127px }
+.section_1 .item5 { width: 415px; height: 620px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_flower2.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: 0px; ; margin-top: 6px }
+.section_1 .item6 { width: 415px; height: 620px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_flower1.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: -126px; ; margin-top: 46px }
+.section_1 .item7 { width: 329px; height: 116px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_txt2.png) no-repeat center center; position: absolute; left: 50%; top: 50%; margin-left: -280px; ; margin-top: 361px }
+.section_1 .xingxing { top: 0; left: 0; bottom: 0; position: absolute; width: 640px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_xingxing.png) no-repeat center center; background-size: 100%; -webkit-animation: clmxingxing 20s infinite alternate linear; }
+.section_2 .xingxing { top: 0; left: 0; bottom: 0; position: absolute; width: 640px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_xingxing.png) no-repeat center center; background-size: 100%; -webkit-animation: clmxingxing 20s infinite alternate linear; }
+.section_3 .xingxing { top: 0; left: 0; bottom: 0; position: absolute; width: 640px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_1_xingxing.png) no-repeat center center; background-size: 100%; -webkit-animation: clmxingxing 20s infinite alternate linear; }
+
+/* 星星背景 */
+@-webkit-keyframes clmxingxing {
+ 0% {
+-webkit-transform:scale(.9) translate3d(120px, 0, 0);
+}
+ 25% {
+ -webkit-transform:scale(1.2) translate3d(0px, 0, 0);
+}
+ 50% {
+ -webkit-transform:scale(.9) translate3d(-120px, 0, 0);
+}
+ 75% {
+ -webkit-transform:scale(1) translate3d(0px, 0, 0);
+}
+ 100% {
+ -webkit-transform:scale(.9) translate3d(120px, 0, 0);
+}
+}
+/* 花的摆动 */
+
+.section_1 .item3.flower3 { -webkit-transform-origin: center bottom; -webkit-transform: rotate(-5deg); -webkit-animation: sway 2.2s infinite alternate ease-in-out; }
+.section_1 .item5.flower3 { -webkit-transform-origin: center bottom; -webkit-transform: rotate(-5deg); -webkit-animation: sway 2s infinite alternate ease-in-out; }
+.section_1 .item6.flower3 { -webkit-transform-origin: center bottom; -webkit-transform: rotate(-5deg); -webkit-animation: sway 2.2s infinite alternate ease-in-out; }
+ @-webkit-keyframes sway {
+ 100% {
+ -webkit-transform:rotate(5deg);
+}
+}
+.section_1 .item2 { -webkit-transform-origin: center center; -webkit-transform: scale(0); }
+.section_1 .item2.fangda { -webkit-animation: fangda 4s 1 ease-in-out; }
+ @-webkit-keyframes fangda {
+ 25% {
+ -webkit-transform:scale(1);
+}
+ 90% {
+ -webkit-transform:scale(1);
+}
+ 100% {
+ -webkit-transform:scale(0);
+}
+}
+.section_1 .item4 { -webkit-transform-origin: 20% center; -webkit-transform: scale(0) translate3d(-2000px, 0, 0); }
+.section_1 .item4.pingzi { -webkit-animation: pingzi 2.2s 1 ease-in-out; animation-delay: 1s; -webkit-animation-delay: 1s; }
+ @-webkit-keyframes pingzi {
+ 100% {
+ -webkit-transform:scale(1) translate3d(0, 0, 0);
+}
+}
+/* section_2css文件 */
+.aitem1.se2_active, .aitem2.se2_active, .aitem3.se2_active, .aitem4.se2_active, .aitem5.se2_active, .aitem6.se2_active, .aitem7.se2_active, .aitem8.se2_active, .aitem9.se2_active, .aitem10.se2_active { -webkit-transform: scale(1); transform: scale(1); opacity: 1; -webkit-filter: blur(0px); }
+.aitem { width: 150px; height: 876px; float: left; -webkit-transform: scale(.6); transform: scale(.6); opacity: .5; -webkit-filter: blur(10px); }
+.aitem.aitemtransition { transition: all 1.5s; -webkit-transition: all 1.5s; }
+.section_2 .aitem1 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt1.png) no-repeat center center; }
+.section_2 .aitem2 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt2.png) no-repeat center center; }
+.section_2 .aitem3 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt3.png) no-repeat center center; }
+.section_2 .aitem4 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt4.png) no-repeat center center; }
+.section_2 .aitem5 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt5.png) no-repeat center center; }
+.section_2 .aitem6 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt1.png) no-repeat center center; }
+.section_2 .aitem7 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt2.png) no-repeat center center; }
+.section_2 .aitem8 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt3.png) no-repeat center center; }
+.section_2 .aitem9 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt4.png) no-repeat center center; }
+.section_2 .aitem10 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_2_txt5.png) no-repeat center center; }
+.section_2 .wai { width: 470px; height: 876px; overflow: hidden; position: absolute; left: 50%; top: 30px; margin-left: -210px; }
+.section_2 .nei { width: 1600px; height: 876px; }
+.section_2 .nei.neitransition { transition: all 1s; -webkit-transition: all 1s; }
+.section_2 .dingdang { width: 640px; height: 906px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_dingdang.png) no-repeat center center; position: absolute; left: -50%; top: -50%; margin-left: 36px; margin-top: 1099px; }
+.section_2 .daxiong { width: 546px; height: 748px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_daxiong.png) no-repeat center center; position: absolute; left: -50%; top: -50%; margin-left: 623px; margin-top: 1100px; }
+/* section_3css文件 */
+.section_3 .bitem { position: absolute; left: 50%; top: 50%; }
+.section_3 .bitem1 { width: 474px; height: 18px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt1.png) no-repeat center center; margin-left: -237px; margin-top: -256px; }
+.bitem1animation { -webkit-animation: bitem 6s 1 ease-in-out; }
+.section_3 .bitem2 { width: 285px; height: 36px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt4.png) no-repeat center center; margin-left: -142px; margin-top: 45px; opacity: 0; -webkit-transition: all 2s; transition-delay: 6s; -webkit-transition-delay: 4.5s; }
+.section_3 .bitem3 { width: 60px; height: 18px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt5.png) no-repeat center center; margin-left: -30px; margin-top: 387px; opacity: 0; -webkit-transition: all 2s; transition-delay: 8s; -webkit-transition-delay: 6s; }
+.section_3.bitem2transition { opacity: 1; }
+.section_3 .bitem3 { }
+ @-webkit-keyframes bitem {
+ 0% {
+background:url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt1.png) no-repeat center center;
+}
+ 20% {
+background:url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt1.png) no-repeat center center;
+}
+ 33% {
+background:url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt2.png) no-repeat center center;
+}
+ 60% {
+background:url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt2.png) no-repeat center center;
+}
+ 64% {
+background:url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt3.png) no-repeat center center;
+}
+ 100% {
+background:url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_3_txt3.png) no-repeat center center;
+}
+}
+/* Section 4 */
+.section_4 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_4_bg.jpg) no-repeat center center; }
+.section_4 .circle { position: absolute; top: 50%; left: 48px; margin-top: -387px; width: 543px; height: 543px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_4_circle.png) no-repeat center center; -webkit-transition: 0.5s; -webkit-transform: translate3d(-640px, 0px, 0px); z-index: 10; }
+.section_4 .circle.in { -webkit-transform: translate3d(0px, 0px, 0px); }
+.section_4 .hand { position: absolute; bottom: 0px; right: 0px; width: 174px; height: 340px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_4_hand.png) no-repeat center center; -webkit-transition: 0.5s 0.5s; -webkit-transform: translate3d(100%, 100%, 0px); z-index: 10; }
+.section_4 .hand.in { -webkit-transform: translate3d(0%, 0%, 0px); }
+.section_4 .page { position: absolute; width: 640px; height: 640px; bottom: 0px; right: 0px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_4_page.png) no-repeat center center; background-size: 100%; -webkit-transition: 1s; -webkit-transform: scale(0); -webkit-transform-origin: 640px 640px; z-index: 20; }
+.section_4 .page.in { -webkit-transform: scale(5); }
+/* Section 5 */
+.section_5 .products { width: 840px; height: 1280px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section_5_bg.jpg) no-repeat center center; position: absolute; top: 00px; left: 0px; -webkit-transform: translate3d(0px, 0px, 0px); }
+.section_5 .products.in { -webkit-animation: section_5_products 8s linear infinite; }
+ @-webkit-keyframes light {
+ 0% {
+-webkit-transform:translate3d(-100px, -200px, 0px);
+}
+ 25% {
+-webkit-transform:translate3d(0px, 0px, 0px);
+}
+ 50% {
+-webkit-transform:translate3d(-20px, 100px, 0px);
+}
+ 75% {
+-webkit-transform:translate3d(100px, 200px, 0px);
+}
+ 100% {
+-webkit-transform:translate3d(-100px, -200px, 0px);
+}
+}
+/* section-6*/
+.section-6 { background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-6.jpg) no-repeat center center; }
+.section-6 .imgs-cont { width: 640px; position: absolute; top: 50%; left: 0; margin-top: -540px; }
+.section-6 .imgs-cont li { width: 640px; position: absolute; display: none; }
+.section-6 .imgs-cont .current { display: block; }
+.section-6 .butt-top { width: 50px; height: 50px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-6-4.1.png) no-repeat 0 top; position: absolute; left: 50%; margin-left: -30px; top: 50%; margin-top: -300px; z-index: 97; }
+.section-6 .butt-bottom { width: 50px; height: 50px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-6-4.1.png) no-repeat 0 bottom; position: absolute; left: 50%; margin-left: -30px; top: 50%; margin-top: 230px; z-index: 98; }
+.section-6 .dynamic { width: 640px; position: absolute; top: 0; left: 0; bottom: 0; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-6-5.png) no-repeat center center; z-index: 96; -webkit-transform: translate(0, 0); -webkit-animation: light 20s infinite linear; -webkit-transform-style: preserve-3d; }
+/* section-7*/
+.section-7 { overflow: hidden; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-7-1.jpg) no-repeat center center; }
+.section-7 .bg-mobile { width: 640px; position: absolute; top: 0; left: 0; bottom: 0; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-7-2.jpg) no-repeat -640px center; z-index: 95; /*-webkit-transition: 1s;*/ }
+.section-7 .butt-right { width: 50px; height: 50px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-7-8.png) no-repeat right 0; position: absolute; left: 50%; top: 50%; margin-left: 200px; z-index: 98; }
+.section-7 .butt-left { width: 50px; height: 50px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-7-8.png) no-repeat left 0; position: absolute; left: 50%; top: 50%; margin-left: -250px; z-index: 99; }
+.section-7 .content-imgs { width: 640px; position: absolute; top: 50%; left: 0; z-index: 96; margin-top: -540px; }
+.section-7 .content-imgs li { width: 640px; position: absolute; opacity: 0; -webkit-transition: 0.5s; }
+.section-7 .content-imgs .current { opacity: 1; -webkit-transition: 0.5s 0.5s; }
+.section-7 .dynamic { width: 640px; position: absolute; top: 0; left: 0; bottom: 0; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-7-9.png) no-repeat center center; z-index: 97; -webkit-transform: translate(0, 0); -webkit-animation: light 20s infinite linear; -webkit-transform-style: preserve-3d; }
+.section-7 .set-like { width: 154px; height: 154px; background: url(../img/section-7-10.png) no-repeat; position: absolute; left: 50%; margin-left: -77px; top: 50%; margin-top: 240px; z-index: 100; }
+.section-7 .set-like .num { font-size: 34px; color: #fff; position: absolute; top: 28px; width: 154px; text-align: center; display: block; }
+.section-7 .set-like .star { width: 22px; height: 22px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-7-11.png) no-repeat; position: absolute; top: 70px; left: 108px; opacity: 1; -webkit-transform: rotate(0); -webkit-transition: all 0.5s; }
+.section-7 .set-like.out .star { opacity: 0; -webkit-transform: rotate(180deg); }
+/* section-8*/
+.section-8 { overflow: hidden; }
+.section-8 .wormhole { width: 640px; position: absolute; top: 0; left: 0; bottom: 0; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-8-1.jpg) no-repeat center center; -webkit-transition: 1s; }
+.section-8 .people { width: 640px; position: absolute; top: 0; left: 0; bottom: 0; -webkit-transform: scale(1, 1); -webkit-transform-origin: center 650px; -webkit-transition: 0.8s; }
+.section-8 .people .people-con { width: 640px; height: 100%; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-8-1.png) no-repeat center center; -webkit-transform-style: preserve-3d; -webkit-animation: move 1.4s infinite ease-in-out; -webkit-transform-origin: center -20px; }
+@-webkit-keyframes move {
+ 0%, 100% {
+-webkit-transform:rotate(-2deg);
+}
+ 50% {
+-webkit-transform:rotate(2deg);
+}
+}
+.section-8 .bg { width: 640px; height: 100%; position: absolute; top: 0; left: 0; bottom: 0; background: #fffde9; opacity: 0; -webkit-transition: 0.5s; }
+.section-8 .jion { width: 200px; height: 200px; position: absolute; top: 50%; left: 50%; margin-left: -100px; margin-top: 240px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/section-8-3.png) no-repeat center center; -webkit-transition: 0.8s; }
+ @-webkit-keyframes up {
+ 0%, 30% {
+opacity:0;
+-webkit-transform:translate(0, 10px);
+}
+ 60% {
+opacity:1;
+-webkit-transform:translate(0, 0);
+}
+ 100% {
+opacity:0;
+-webkit-transform:translate(0, -8px);
+}
+}
+.up { width: 52px; height: 44px; position: absolute; bottom: 30px; left: 294px; background: url(http://afuweixin.b0.upaiyun.com/catpic/doraemon/up.png) no-repeat; background-size: 100%; z-index: 50; -webkit-animation: up 1.5s infinite ease-in-out; display: none; }
+ @-webkit-keyframes loading {
+ 0% {
+-webkit-transform:perspective(500px) rotateX(0deg) rotateY(0deg);
+}
+ 50% {
+-webkit-transform:perspective(500px) rotateX(-180deg) rotateY(0deg);
+}
+ 100% {
+-webkit-transform:perspective(500px) rotateX(-180deg) rotateY(-180deg);
+}
+}
+.loading { width: 100px; height: 100px; position: absolute; top: 50%; left: 270px; margin-top: -50px; background-color: #2fc2f2; -webkit-animation: loading 1s linear infinite; opacity: 1; z-index: 20; }
+.loading.finish { opacity: 0; }

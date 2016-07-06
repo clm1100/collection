@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style>
+	.div1{border:1px solid #f45;width:200px;height:400px;position:relative;margin:0 auto;}
+	.div2,.div3{position:absolute;top:200px;left:0;}
+
+	.div2{background:red;width:200px;height:200px;		}
+	.donghua1{
+		-webkit-animation-name:'donghua1';
+		-webkit-animation-duration: 3s;
+		-webkit-animation-direction: normal;
+		-webkit-animation-iteration-count:1;
+	}
+	.donghua2{
+		-webkit-animation-name:'donghua2';
+		-webkit-animation-duration: 3s;
+		-webkit-animation-direction: normal;
+		-webkit-animation-iteration-count:1;
+	}
+	.div3{background:yellow;width:180px;height:200px;}
+	  /*//动画1*/
+	 @-webkit-keyframes 'donghua1' {
+	     0% {
+	        top: 200px;
+	       
+	     }
+	     50% {
+	        top: 0px;
+	        
+	     }
+	     80% {
+	        top: 0px;
+	        
+	     }
+
+	     100% {
+	        top:200px;
+	        
+	     }
+
+	  }
+	  /*//动画2*/
+	  	 @-webkit-keyframes 'donghua2' {
+	     0% {
+	        top: 200px;
+	        
+	     }
+	     50% {
+	        top: 0px;
+	       
+	     }
+	     80% {
+	        top: 0px;
+	        
+	     }
+
+	     100% {
+	        top:200px;
+	        
+	     }
+
+	  }
+	      
+
+
+
+	</style>
+</head>
+<body>
+<div class="div1">
+	<div class="div2 donghua1"></div>
+	<div class="div3"></div>
+</div>
+
+<script src="zepto.js"></script>	
+<script>
+	var defen = 0;
+	var lock = true;
+	var timer;
+/*	$(function(){
+		$(".div2")[0].addEventListener("webkitAnimationEnd",animationend,false)	
+	})
+function animationend(){
+			$(".div2")[0].className = $(".div2")[0].className.replace(/ donghua1/g, "").replace(/ donghua2/g, "");
+			$(".div2")[0].removeEventListener("webkitAnimationEnd",animationend,false);
+			$(".div2").addClass("donghua2");
+}*/
+$(function(){
+	$(".div2")[0].addEventListener("click",function(){if(lock){
+		lock = false;
+		$(this).css({"background":"#000"});
+		alert(11)
+	}},false);
+	$(".div2")[0].addEventListener("webkitAnimationEnd",function(){
+		lock = true;
+		console.log($(this).attr('class').indexOf("donghua1"));
+		if($(this).attr('class').indexOf("1")>0){
+			$(this).removeClass("donghua1").addClass("donghua2");
+		}else{
+			$(this).removeClass("donghua2").addClass("donghua1");
+		}
+		
+	},false)
+})
+</script>
+</body>
+</html>
